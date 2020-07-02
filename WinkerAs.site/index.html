@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Добро пожаловать!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+      <div class="upperHome homeImg">
+          <nav class="navbar navbar-expand-lg fixed-top ">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-4">
+
+          <li class="nav-item">
+   	        <a class="nav-link" data-value="myProject" href="#">Project</a>
+   	      </li>
+   	      <li class="nav-item">
+   	        <a class="nav-link " data-value="advantages" href="#">Portfolio</a>
+   	      </li>
+   	      <li class="nav-item">
+   	        <a class="nav-link " data-value="contact" href="#">Contact</a>
+   	      </li>
+     </ul>
+   </div>
+          </nav>
+
+          <center>
+          <div class="about" id="about">
+          <h2 class="myName">СОЗДАМ TELEGRAM БОТА</h2>
+          <h4>Создам Telegram бота для вашей страницы<br> или канала телеграмм бот с функцией<br> ответа на заданное слово или фразу</h4>
+          </div>
+          </center>
+          <div class="homeSouth description">
+              <button id="button" class="btn btn-outline-secondary" data-value="myProject">Далее</button>
+          </div>
+            </div>
+      </div>
+
+      <div class="container-fluid middle" id="blackBlock"></div>
+
+      <div class="container-fluid middle" id="myProject" class="about">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+          <center><h2 id="text">Функции бота: <br><br>- автопостинг информации из базы данных;<br>- ответ на заданный ему вопрос;<br>- и многое другое.
+</h2></center>
+<button id="button2" class="btn btn-outline-secondary" data-value="myProject">Далее</button>
+      </div>
+
+      <div class="container-fluid middle" id="blackBlock"></div>
+
+      <div class="container-fluid middle" id="advantages">
+        <br><br><br><br><br><br>
+          <center id="text"><h2>Преимущества:<br><br>
+<br>1	Доступность<br>
+<br>2	Чат-боты – отличный инструмент для обработки большого количества типовых запросов<br>
+<br>3	Возможность для компании и клиентов лучше узнать и понять друг друга<br>
+<br>4	Низкие расходы на техническое обслуживание<br>
+<br>5	 Повышение уровня обслуживания потребителей с помощью сбора и обработки данных<br>
+<br>6	Независимость платформы<br>
+<br>7	Экономия времени<br>
+</h2></center>
+
+<button id="button3" class="btn btn-outline-secondary" data-value="myProject">Далее</button>
+
+      </div>
+
+      <div class="container-fluid middle" id="blackBlock"></div>
+
+      <footer class="container-fluid floor" id="contact">
+        <br><center>
+          Contact: <br><br>
+          <a href="https://github.com/WinkerAs">GITHUB<br>
+          <a href="https://vk.com/winkeras">VK<br>
+          <a href="https://www.instagram.com/winkeras228">INSTAGRAM<br></center>
+      </footer>
+
+
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src='js/main.js'></script>
+
+      <script>
+        button.onclick = function() {
+          $("body,html").animate({
+         		scrollTop:$("#" + "myProject").offset().top
+         	},1000)};
+          button2.onclick = function() {
+            $("body,html").animate({
+           		scrollTop:$("#" + "advantages").offset().top
+           	},1000)};
+            button3.onclick = function() {
+              $("body,html").animate({
+             		scrollTop:$("#" + "contact").offset().top
+             	},1000)};
+      </script>
+    </body>
+</html>
+
+<style media="screen">
+
+  .myName{
+    letter-spacing: 20px;
+  }
+
+  .about{
+    text-shadow: 1px 1px 1px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: justify;
+    color: white;
+  }
+
+  .floor{
+    font-family: inherit;
+    font-size: 15pt;
+    color:white;
+    background:#005f9e;
+  }
+
+  .homeImg.upperHome{
+  color: red;
+  background-image: url(t1.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  }
+
+  #text{
+    margin-left: 6em;
+    text-indent: 1.5em;
+    text-align: left;
+    color: white;
+    font-size: 7vh;
+    text-shadow: 1px 1px 1px #000;
+  }
+
+  #blackBlock{
+    background-color: black;
+    height: 1vh;
+  }
+
+  #myProject{
+    color: red;
+    background-image: url(t2.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #advantages{
+    color: red;
+    background-image: url(second.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  a:visited{
+    color: white;
+  }
+
+  .textToProject{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+   }
+  .advantages{
+   margin: 4em 0;
+   position: relative;
+  }
+  .advantages h1{
+   color:#F97300;
+   margin: 2em;
+  }
+  .advantages img{
+    height: 15rem;
+    width: 100%;
+    margin: 1em;
+  }
+
+  .middle{
+  font-family: serif;
+  background-size: cover;
+  color: white;
+  background: black;
+  }
+
+  *, ::after, ::before {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .description button{
+  border:1px  solid #000305;
+  background:#00406b;
+  color:#fff;
+  }
+
+  button{
+  border:1px  solid #000305;
+  background:#00406b;
+  color:#fff;
+  }
+
+  .navbar{
+   background:black;
+  }
+  .nav-link , .navbar-brand{
+   color: #f4f4f4;
+   cursor: pointer;
+  }
+
+  .nav-link{
+   margin-right: 1em !important;
+  }
+  .nav-link:hover{
+   color: gray;
+  }
+  .navbar-collapse{
+   justify-content: center;
+  }
+  .navbar-toggler{
+  background:#fff !important;
+  }
+  .homeSouth{
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 54px);
+    top: calc(100% - 120px);
+  }
+
+
+</style>
